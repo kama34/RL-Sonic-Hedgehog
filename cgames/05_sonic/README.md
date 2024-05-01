@@ -32,12 +32,9 @@ Steps:
 
 ## Deep RL Agents
 
-- Deep Q Network(DQN) [**[Preview]**](https://github.com/deepanshut041/Reinforcement-Learning/blob/master/cgames/05_sonic/sonic_dqn.ipynb) [**[Download]**](./sonic_dqn.ipynb).
-- Dueling Double DQN [**[Preview]**](https://github.com/deepanshut041/Reinforcement-Learning/blob/master/cgames/05_sonic/sonic_ddqn.ipynb) [**[Download]**](./sonic_ddqn.ipynb).
-- Monte Carlo Policy Gradient [**[Preview]**](https://github.com/deepanshut041/Reinforcement-Learning/blob/master/cgames/05_sonic/sonic_pg.ipynb) [**[Download]**](./sonic_pg.ipynb).
-- Rainbow [**[Preview]**](https://github.com/deepanshut041/Reinforcement-Learning/blob/master/cgames/05_sonic/sonic_rainbow.ipynb) [**[Download]**](./sonic_rainbow.ipynb).
-- Advantage Actor Critic (A2C) [**[Preview]**](https://github.com/deepanshut041/Reinforcement-Learning/blob/master/cgames/05_sonic/sonic_a2c.ipynb) [**[Download]**](./sonic_a2c.ipynb).
-- Proximal Policy Gradients(PPO) [**[Preview]**](https://github.com/deepanshut041/Reinforcement-Learning/blob/master/cgames/05_sonic/sonic_ppo.ipynb) [**[Download]**](./sonic_ppo.ipynb).
+- Deep Q Network(DQN)
+- Dueling Double DQN 
+- Rainbow
 
 ## Any questions
 
