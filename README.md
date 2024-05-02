@@ -2,6 +2,8 @@
 ## About
 The Sonic the Hedgehog Reinforcement Learning project, where we trained AI agents to play through the iconic Green Hill Zone using deep reinforcement learning techniques. The goal was to teach an agent to effectively navigate the first level of Sonic, which involves complex control tasks like speed, precision, and long-term planning.
 
+
+
 ## Installation
 
 Follow these steps to install and configure the environment for the project:
@@ -36,4 +38,8 @@ Follow these steps to install and configure the environment for the project:
     pip install gym==0.17.1
     ```
 
-After completing these steps, your environment should be ready to work with your Reinforcement Learning (RL) project.
+After completing these steps, your environment should be ready to work with our code:
+
+- To work with the dqn algorithm, you need to run [DQN Script](./05_sonic/sonic_dqn.ipynb)
+- To work with the ddqn algorithm, you need to run [DDQN Script](./05_sonic/sonic_ddqn.ipynb)
+- To work with the rainbow algorithm, you need to run [Rainbow Script](./05_sonic/sonic_rainbow.ipynb)
