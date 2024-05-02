@@ -73,12 +73,6 @@ The following models are discrete extensions of the basic DQN model. The combina
 
 Dueling DQNs attempt to gain a deeper understanding of the environment by breaking down the q function $$Q(s,a)$$ which represents the value of taking action $$a$$ in state $$s$$ into two separate functions: $$V(s)$$ - the value of being in state $$s$$ and $$A(s,a)$$ - the advantage of taking action $$a$$ over taking all other possible actions. Intuitively, the dueling architecture can separate the value of simply existing in a state $$V(s)$$ from the value associated with acting in the state $$A(s,a)$$. Dueling DQNs learn $$V(s)$$ and $$A(s,a)$$ within their inner layers, then sum the output of the two layers to yield the q values based on the relation: $$V(s) + A(s,a) = Q(s,a)$$.
 
-## Rainbow
-
-We use a specific variant of DQN, namely Rainbow, which performs particularly well on the ALE. We retain the architecture and most of the hyper-parameters from, with a few small changes. We use a replay buffer size of 100000 instead of 1M to lower the algorithm’s memory consumption. We do not use hyper-parameter schedules; rather, we simply use the initial values of the schedules from. Since DQN tends to work best with a small.
-
-We use an environment wrapper that rewards the agent based on deltas in the maximum 8 x-position. This way, the agent is rewarded for getting further than it has been before (in the current episode), but it is not punished for backtracking in the level. This reward preprocessing gives a sizable performance boost.
-
 ## Results
 
 All agents demonstrate the ability to navigate through challenging obstacles and terrain in the Sonic game. The learning process involves adapting to the game dynamics, optimizing action choices, and maximizing score.
