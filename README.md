@@ -42,4 +42,3 @@ After completing these steps, your environment should be ready to work with our 
 
 - To work with the dqn algorithm, you need to run [DQN Script](./05_sonic/sonic_dqn.ipynb)
 - To work with the ddqn algorithm, you need to run [DDQN Script](./05_sonic/sonic_ddqn.ipynb)
-- To work with the rainbow algorithm, you need to run [Rainbow Script](./05_sonic/sonic_rainbow.ipynb)

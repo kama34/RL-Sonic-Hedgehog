@@ -101,12 +101,6 @@ The Dueling DQN algorithm was trained for approximately 17 hours and the results
 **Figure 4 - result of training DDQN**
 ![Figure 4 - result of training DDQN](./grafics/ddqn_grafic.png)
 
-### Rainbow
-
-Rainbow algorithm was trained for approximately 10 hours. The result of the scores during training is presented on Figure 5. This algorithm shows more stability. After 5 000 episodes agent can reach the finish of the level. But the score variability remained high variation too, fluctuating between 600 and approximately 10,000 even after 30,000 episodes.
-
-**Figure 5 - result of training Rainbow**
-![Figure 5 - result of training Rainbow](./grafics/rainbow_grafic.png)
 
 ## Conclusion
 
