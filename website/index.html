@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        select, button {
+            margin: 10px 0;
+        }
+        video {
+            display: none;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <select id="list1" onchange="updateList2()">
+        <option value="">Choose model</option>
+        <option value="DQN">DQN</option>
+        <option value="DDQN">DDQN</option>
+    </select>
+    <select id="list2" disabled onchange="enablePlayButton()">
+        <option value="">Choose video</option>
+        <!-- Заполняется динамически -->
+    </select>
+    <button id="playButton" disabled>Play</button>
+    <video id="myVideo" controls>
+        <source src="movie.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+</div>
+<script src="videoPaths.js"></script>
+<script>
+    function updateList2() {
+        const list1 = document.getElementById('list1');
+        const list2 = document.getElementById('list2');
+        const selectedOption = list1.value;
+        const files = videoPaths[selectedOption];
+        list2.innerHTML = '<option value="">Choose video</option>' + files.map(file => `<option value="${file}">${file.split('\\').pop()}</option>`).join('');
+        list2.disabled = false;
+    }
+
+    function enablePlayButton() {
+        const list2 = document.getElementById('list2');
+        const playButton = document.getElementById('playButton');
+        if (list2.value) {
+            playButton.disabled = false;
+        } else {
+            playButton.disabled = true;
+        }
+    }
+
+    document.getElementById('playButton').addEventListener('click', function() {
+        const list2 = document.getElementById('list2');
+        const video = document.getElementById('myVideo');
+        video.src = list2.value;
+        video.style.display = 'block';
+        video.play();
+    });
+</script>
+</body>
+</html>
