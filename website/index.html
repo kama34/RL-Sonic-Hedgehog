@@ -8,29 +8,35 @@
             background-size: cover;
             color: #333;
         }
-        .container {
-            width: 70%;
+        .all_container{
+            width: 65%;
+            display: flex;
+            flex-direction: column;
             margin: auto;
             background-color: rgba(255, 255, 255, 0.8); /* Белый фон с небольшой прозрачностью */
-            padding: 20px;
             border-radius: 10px;
-        }
-        select, button {
-            margin: 10px 0;
-        }
-        video {
-            display: none;
-
-            width: 100%;
+            padding: 20px;
+            gap: 20px;
         }
         .container {
-            margin: auto;
+            width: 100%;
             display: flex;
-            flex-direction: row;
-            align-items: flex-end;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .select-container {
+            display: flex;
+            gap: 20px;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            color: #333;
         }
         button {
-            margin: 10px 0;
             padding: 10px 20px;
             font-size: 20px;
             color: white;
@@ -47,29 +53,29 @@
         button:hover:not(:disabled) {
             background-color: #0056b3;
         }
-        select {
-            margin: 10px 0;
-            padding: 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            background-color: #f0f0f0;
-            color: #333;
+        video {
+            display: none;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <select id="list1" onchange="updateList2()">
-        <option value="">Choose model</option>
-        <option value="DQN">DQN</option>
-        <option value="DDQN">DDQN</option>
-    </select>
-    <select id="list2" disabled onchange="enablePlayButton()">
-        <option value="">Choose video</option>
-        <!-- Заполняется динамически -->
-    </select>
-    <button id="playButton" disabled>Play</button>
+<div class="all_container">
+    <div class="container">
+        <div class="select-container">
+            <select id="list1" onchange="updateList2()">
+                <option value="">Choose model</option>
+                <option value="DQN">DQN</option>
+                <option value="DDQN">DDQN</option>
+            </select>
+            <select id="list2" disabled onchange="enablePlayButton()">
+                <option value="">Choose video</option>
+                <!-- Заполняется динамически -->
+            </select>
+        </div>
+        <button id="playButton" disabled>Play</button>
+
+    </div>
     <video id="myVideo" controls>
         <source src="movie.mp4" type="video/mp4">
         Ваш браузер не поддерживает видео.
