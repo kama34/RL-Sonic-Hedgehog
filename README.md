@@ -31,7 +31,7 @@ Follow these steps to install and configure the environment for the project:
 6. **Add the Sonic The Hedgehog (Japan, Europe, Korea) file (En).gen to your project**. This file should be added to the root directory of your project.
 7. **Import games using Gym Retro**:
     ```bash
-    python -m retro.import ./
+    python -m retro.import ./sonic
     ```
 8. **Install Gym 0.17.1 using pip**:
     ```bash
