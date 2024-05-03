@@ -1,8 +1,8 @@
 import os
 import json
 
-path_ddqn = '..\\sonic\\record_ddqn\\video'
-path_dqn = '..\\sonic\\record_dqn\\video'
+path_ddqn = '.\\sonic\\record_ddqn\\video'
+path_dqn = '.\\sonic\\record_dqn\\video'
 
 mp4_files_ddqn = [os.path.relpath(os.path.join(path_ddqn, f)) for f in os.listdir(path_ddqn) if f.endswith('.mp4')]
 mp4_files_dqn = [os.path.relpath(os.path.join(path_dqn, f)) for f in os.listdir(path_dqn) if f.endswith('.mp4')]
