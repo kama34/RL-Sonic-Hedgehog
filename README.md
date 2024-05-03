@@ -2,7 +2,8 @@
 ## About
 The Sonic the Hedgehog Reinforcement Learning project, where we trained AI agents to play through the iconic Green Hill Zone using deep reinforcement learning techniques. The goal was to teach an agent to effectively navigate the first level of Sonic, which involves complex control tasks like speed, precision, and long-term planning.
 
-
+## Website
+[You can watch the video results on the demo site](https://kama34.github.io/RL-Sonic-Hedgehog/)
 
 ## Installation
 
@@ -42,3 +43,14 @@ After completing these steps, your environment should be ready to work with our 
 
 - To work with the dqn algorithm, you need to run [DQN Script](./sonic/sonic_dqn.ipynb)
 - To work with the ddqn algorithm, you need to run [DDQN Script](./sonic/sonic_ddqn.ipynb)
+
+## Developers
+- Kamyshnikov Dmitrii :
+  - [GitHub](https://github.com/kama34)
+  - [Email](mailto:d.kamyshnikov.offer@yandex.ru)
+  - [Telegram](https://t.me/kama_34)
+ 
+- Sofya Polozova :
+   - [GitHub]()
+   - [Email]()
+   - [Telegram](https://t.me/Sofa_pss)
