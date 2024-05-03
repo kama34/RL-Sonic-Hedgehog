@@ -40,5 +40,5 @@ Follow these steps to install and configure the environment for the project:
 
 After completing these steps, your environment should be ready to work with our code:
 
-- To work with the dqn algorithm, you need to run [DQN Script](./05_sonic/sonic_dqn.ipynb)
-- To work with the ddqn algorithm, you need to run [DDQN Script](./05_sonic/sonic_ddqn.ipynb)
+- To work with the dqn algorithm, you need to run [DQN Script](./sonic/sonic_dqn.ipynb)
+- To work with the ddqn algorithm, you need to run [DDQN Script](./sonic/sonic_ddqn.ipynb)
