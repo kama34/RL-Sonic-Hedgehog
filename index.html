@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
         body {
             font-family: Arial, sans-serif;
             background-image: url('background.jpg');
             background-size: cover;
             color: #333;
+        }
+        .header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            border-bottom: 1px solid #ccc;
         }
         .all_container{
             width: 90%;
@@ -77,10 +87,23 @@
                 width: auto;
             }
         }
+        @media (max-width: 600px) {
+            .header {
+                font-size: 18px;
+            }
+            .all_container {
+                padding: 10px;
+            }
+        }
+
     </style>
 </head>
 <body>
 <div class="all_container">
+    <div class="header">
+        Welcome to the website of the video demonstration of the training of DQN and DDQN models to play the retro Sonic
+        Hedgehog game!
+    </div>
     <div class="container">
         <div class="select-container">
             <select id="list1" onchange="updateList2()">
