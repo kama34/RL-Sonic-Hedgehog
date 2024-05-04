@@ -51,6 +51,6 @@ After completing these steps, your environment should be ready to work with our 
   - [Telegram](https://t.me/kama_34)
  
 - Sofya Polozova :
-   - [GitHub]()
-   - [Email]()
+   - [GitHub](https://github.com/Sofapss)
+   - [Email](mailto:sofya_polozova@mail.ru)
    - [Telegram](https://t.me/Sofa_pss)
