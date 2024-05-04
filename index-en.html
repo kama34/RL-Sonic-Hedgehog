@@ -123,17 +123,18 @@
 <div class="all_container">
     <button class="lang-switch" onclick="switchLanguage()">EN/RU</button>
     <div class="header">
-        Добро пожаловать на веб-сайт видеодемонстрации обучения моделей DQN и DDQN играть в ретро игру Sonic Hedgehog!
+        Welcome to the website of the video demonstration of the training of DQN and DDQN models to play the retro Sonic
+        Hedgehog game!
     </div>
     <div class="container">
         <div class="select-container">
             <select id="list1" onchange="updateList2()">
-                <option value="">Выберите модель</option>
+                <option value="">Choose model</option>
                 <option value="DQN">DQN</option>
                 <option value="DDQN">DDQN</option>
             </select>
             <select id="list2" disabled onchange="enablePlayButton()">
-                <option value="">Выберите видео</option>
+                <option value="">Choose video</option>
                 <!-- Заполняется динамически -->
             </select>
         </div>
@@ -151,7 +152,7 @@
         const list2 = document.getElementById('list2');
         const selectedOption = list1.value;
         const files = videoPaths[selectedOption];
-        list2.innerHTML = '<option value="">Выберите видео</option>' + files.map(file => `<option value="${file}">${file.split('\\').pop()}</option>`).join('');
+        list2.innerHTML = '<option value="">Choose video</option>' + files.map(file => `<option value="${file}">${file.split('\\').pop()}</option>`).join('');
         list2.disabled = false;
     }
 
