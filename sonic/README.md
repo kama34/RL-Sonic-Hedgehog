@@ -1,8 +1,7 @@
 # Sonic The Hedgehog 1
-![test]()
 In this projects we'll implementing agents that learns to play OpenAi Gym(retro) Sonic Hedgehog 1 using several Deep Rl algorithms. OpenAI Gym is a toolkit for developing and comparing reinforcement learning algorithms. We'll be using pytorch library for the implementation.
 
-![untrained](/gif/untrained.gif)
+![untrained](..//gif/untrained.gif)
 
 ## Libraries Used
 - OpenAi Gym Retro
